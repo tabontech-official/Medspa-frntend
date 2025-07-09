@@ -93,13 +93,28 @@
 // export default App;
 
 
+import { FiAlertTriangle } from "react-icons/fi";
+
 const App = () => {
   return (
-    <div style={{ textAlign: 'center', marginTop: '20vh' }}>
-      <h1>🚧 Site Under Maintenance</h1>
-      <p>Please check back later.</p>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center px-4">
+      <div className="bg-white border border-blue-100 rounded-xl shadow-xl max-w-md w-full p-8 text-center">
+        <FiAlertTriangle className="text-yellow-500 text-6xl mx-auto mb-4 animate-pulse" />
+        <h1 className="text-2xl font-bold text-gray-800 mb-2">
+          Site Under Maintenance
+        </h1>
+        <p className="text-gray-600 text-sm">
+          We’re currently upgrading the system. Please check back soon.
+        </p>
+        <div className="mt-6">
+          <span className="text-xs text-gray-400">
+            © {new Date().getFullYear()} YourBrand
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default App;
+
