@@ -108,7 +108,7 @@ const App = () => {
         </p>
         <div className="mt-6">
           <span className="text-xs text-gray-400">
-            © {new Date().getFullYear()} YourBrand
+            © {new Date().getFullYear()} Medspaa tarder
           </span>
         </div>
       </div>
